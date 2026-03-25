@@ -1,0 +1,21 @@
+# Root .gitignore
+.DS_Store
+test_shebang.py
+
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.pytest_cache/
+backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+
+# Large files (optional, but recommended if they exceed 50-100MB)
+# backend/model/
