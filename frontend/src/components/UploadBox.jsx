@@ -41,8 +41,8 @@ export default function UploadBox({ onFileSelect }) {
   return (
     <div className="w-full max-w-md mx-auto">
       <div 
-        className={`relative flex flex-col items-center justify-center w-full h-64 border-2 border-dashed rounded-2xl transition-all duration-300 ease-in-out cursor-pointer overflow-hidden backdrop-blur-sm
-          ${dragActive ? 'border-blue-400 bg-blue-500/10 scale-105 shadow-lg shadow-blue-500/20' : 'border-slate-600 bg-slate-800/50 hover:bg-slate-700/50 hover:border-slate-500'}
+        className={`relative flex flex-col items-center justify-center w-full h-80 border-2 border-dashed rounded-[40px] transition-all duration-500 ease-out cursor-pointer overflow-hidden
+          ${dragActive ? 'border-brand-main bg-brand-light scale-[1.02] shadow-xl' : 'border-slate-100 bg-white hover:border-brand-main/40'}
         `}
         onDragEnter={handleDrag}
         onDragLeave={handleDrag}
@@ -57,25 +57,27 @@ export default function UploadBox({ onFileSelect }) {
         />
         
         {preview ? (
-          <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-0 group">
             <img 
               src={preview} 
               alt="Preview" 
-              className="w-full h-full object-cover opacity-60"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end justify-center pb-4">
-              <span className="text-white font-medium drop-shadow-md">Click or drag to replace image</span>
+            <div className="absolute inset-0 bg-brand-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+              <span className="text-[12px] font-bold text-white bg-brand-dark px-6 py-2.5 rounded-full shadow-lg">Replace Document</span>
             </div>
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-center p-6 text-center z-0">
-            <svg className="w-12 h-12 mb-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
-            </svg>
-            <p className="mb-2 text-sm text-slate-300 font-semibold tracking-wide">
-              Click to upload <span className="font-normal text-slate-400">or drag and drop</span>
+          <div className="flex flex-col items-center justify-center p-10 text-center z-0">
+            <div className="w-16 h-16 rounded-full bg-brand-light flex items-center justify-center text-brand-dark mb-6 shadow-sm">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <p className="mb-2 text-base text-slate-700 font-bold tracking-tight">
+              Select medical image <span className="font-medium text-slate-400">to analyze</span>
             </p>
-            <p className="text-xs text-slate-500">SVG, PNG, JPG or GIF</p>
+            <p className="text-[11px] text-slate-400 font-medium">DICOM, JPEG, or PNG supported</p>
           </div>
         )}
       </div>

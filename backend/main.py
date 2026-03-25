@@ -3,6 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import io
 import os
+import time
+import random
+import json
 os.environ["TF_USE_LEGACY_KERAS"] = "0"
 
 try:
@@ -29,12 +32,25 @@ app.add_middleware(
 # Global variables for model
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "model")
+RECOVERY_PLANS_PATH = os.path.join(BASE_DIR, "recovery_plans.json")
 model = None
+recovery_plans = {}
 IMG_SIZE = (320, 320)
 
 @app.on_event("startup")
-async def load_model():
-    global model
+async def startup_event():
+    global model, recovery_plans
+    
+    # Load recovery plans
+    try:
+        if os.path.exists(RECOVERY_PLANS_PATH):
+            with open(RECOVERY_PLANS_PATH, 'r') as f:
+                recovery_plans = json.load(f)
+            print(f"Loaded recovery plans from {RECOVERY_PLANS_PATH}")
+    except Exception as e:
+        print(f"Failed to load recovery plans: {e}")
+
+    # Load model
     try:
         print(f"Loading model from {MODEL_PATH}...")
         
@@ -123,6 +139,13 @@ def format_prediction(predictions):
         bone_class_name = bone_cols[bone_idx].capitalize()
         view_class_name = view_cols[view_idx].capitalize()
 
+        # Inject recovery plan if applicable
+        plan = None
+        # Convert to lowercase for matching JSON keys
+        lookup_key = bone_cols[bone_idx].lower()
+        if is_fractured and lookup_key in recovery_plans:
+            plan = recovery_plans[lookup_key].get("fractured")
+
         return {
             "bone": {
                 "class": bone_class_name,
@@ -136,27 +159,39 @@ def format_prediction(predictions):
             "view": {
                 "class": view_class_name,
                 "confidence": view_conf
-            }
+            },
+            "recovery_plan": plan
         }
     except Exception as e:
         print(f"Prediction formatting error: {e}")
         return mock_prediction()
 
 def mock_prediction():
+    is_fractured = random.choice([True, False])
+    bone_cols = ['hand', 'finger', 'wrist', 'forearm', 'elbow', 'humerus', 'shoulder', 
+                 'hip', 'leg', 'knee', 'tibia', 'ankle', 'foot', 'toe', 'spine']
+    bone_class = random.choice(bone_cols)
+    
+    plan = None
+    lookup_key = bone_class.lower()
+    if is_fractured and lookup_key in recovery_plans:
+        plan = recovery_plans[lookup_key].get("fractured")
+
     return {
         "bone": {
-            "class": random.choice(['Hand', 'Forearm', 'Shoulder', 'Leg', 'Foot']),
+            "class": bone_class.capitalize(),
             "confidence": round(random.uniform(70.0, 99.9), 1)
         },
         "fracture": {
-            "class": random.choice(["Normal", "Fractured"]),
-            "is_fractured": random.choice([True, False]),
+            "class": "Fractured" if is_fractured else "Normal",
+            "is_fractured": is_fractured,
             "confidence": round(random.uniform(85.0, 99.9), 1)
         },
         "view": {
             "class": random.choice(['Frontal', 'Lateral', 'Oblique']),
             "confidence": round(random.uniform(80.0, 99.9), 1)
-        }
+        },
+        "recovery_plan": plan
     }
 
 

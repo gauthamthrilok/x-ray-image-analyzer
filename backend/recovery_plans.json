@@ -1,0 +1,212 @@
+{
+  "wrist": {
+    "fractured": {
+      "title": "Wrist Fracture Recovery Plan",
+      "steps": [
+        "Immobilization: Wear the provided splint or cast at all times as directed.",
+        "Elevation: Keep your wrist elevated above heart level for the first 3 days.",
+        "Ice Therapy: Apply cold packs for 15 mins every few hours to reduce swelling.",
+        "Finger Motion: Regularly wiggle fingers to maintain circulation and flexibility.",
+        "Follow-up: Schedule orthopedic review within 7-10 days for X-ray monitoring.",
+        "Warning: Seek help for blue fingers, extreme numbness, or severe throbbing."
+      ],
+      "estimated_recovery": "6-8 weeks"
+    }
+  },
+  "hand": {
+    "fractured": {
+      "title": "Hand Fracture Recovery Guide",
+      "steps": [
+        "Splinting: Use the prescribed hand or finger splint to maintain bone alignment.",
+        "Elevation: Rest the hand on pillows above your heart whenever possible.",
+        "Swelling Control: Apply ice in a protector for 10-15 mins several times daily.",
+        "Activity Limit: Avoid all lifting or gripping tasks with the affected hand.",
+        "Therapy: Begin gentle finger gliding exercises only when specifically cleared.",
+        "Alert: Contact your doctor if you lose the ability to move your fingers."
+      ],
+      "estimated_recovery": "4-6 weeks"
+    }
+  },
+  "finger": {
+    "fractured": {
+      "title": "Finger Fracture Care Plan",
+      "steps": [
+        "Buddy Taping/Splinting: Keep the finger secured to its neighbor or in its splint.",
+        "Ice: Use small cold packs on the injured joint for 10 mins multiple times a day.",
+        "Elevation: Keep the hand raised; do not let it hang by your side for long periods.",
+        "Protection: Avoid high-impact activities or sports that could restrike the finger.",
+        "Flexibility: Once stable, gentle range-of-motion starts as advised by your PT.",
+        "Signs: Report any severe deformity or skin breakdown around the splint."
+      ],
+      "estimated_recovery": "3-5 weeks"
+    }
+  },
+  "forearm": {
+    "fractured": {
+      "title": "Forearm Fracture Protocol",
+      "steps": [
+        "Sling Support: Consistently use your sling to support the weight of the cast.",
+        "Weight Limit: Strictly no lifting or pushing with the injured arm.",
+        "Cast Maintenance: Keep the cast dry and clean; never insert objects inside.",
+        "Circulation: Check for warmth and color in your hand and fingers regularly.",
+        "X-ray Schedule: Monitoring usually occurs at weeks 2, 6, and 12.",
+        "Emergency: Sudden chest pain or shortness of breath requires immediate ER visit."
+      ],
+      "estimated_recovery": "8-12 weeks"
+    }
+  },
+  "elbow": {
+    "fractured": {
+      "title": "Elbow Fracture Recovery",
+      "steps": [
+        "Immobilization: Use the long-arm splint or sling to keep the joint at 90 degrees.",
+        "Pain Management: Use ice and prescribed medication to manage acute pain.",
+        "Stiffness Prevention: Gently move your wrist and fingers to prevent distal stiffness.",
+        "No Weight Bearing: Do not use the arm to push up from a chair or bed.",
+        "Physical Therapy: Crucial for elbow recovery; begin exercises exactly as scheduled.",
+        "Nerve Watch: Report any tingling or 'funny bone' sensation in your pinky finger."
+      ],
+      "estimated_recovery": "8-12 weeks"
+    }
+  },
+  "humerus": {
+    "fractured": {
+      "title": "Upper Arm (Humerus) Recovery",
+      "steps": [
+        "Hanging Sling: Gravity often helps alignment; wear your brace or sling correctly.",
+        "Sleeping: Sleep in a reclined or upright position to minimize arm movement.",
+        "No Leaning: Do not rest on your elbow or lean the weight of the arm on surfaces.",
+        "Pendulum Work: When cleared, perform small circular swings to prevent 'frozen shoulder'.",
+        "Activity: Avoid driving until your doctor confirms significant callus formation.",
+        "Watch: Report any new weakness in extending your wrist or fingers."
+      ],
+      "estimated_recovery": "3-4 months"
+    }
+  },
+  "shoulder": {
+    "fractured": {
+      "title": "Shoulder Fracture Management",
+      "steps": [
+        "Shoulder Immobilizer: Keep the arm strapped to your torso as instructed.",
+        "Comfort: Propping the elbow with a pillow while seated can reduce shoulder strain.",
+        "Heat/Cold: Ice for the first 72 hours, then warm compresses for muscle spasms.",
+        "Posture: Maintain an upright posture to prevent secondary neck and back pain.",
+        "Rehab: Follow a strict PT protocol to regain range of motion safely.",
+        "Warning: Sudden swelling in the arm or neck requires medical evaluation."
+      ],
+      "estimated_recovery": "3-4 months"
+    }
+  },
+  "hip": {
+    "fractured": {
+      "title": "Hip Fracture Recovery (Post-Op)",
+      "steps": [
+        "Early Mobilization: Stand and walk with assistance within 24 hours of surgery.",
+        "Hip Precautions: Avoid bending the hip past 90 degrees and do not cross legs.",
+        "Anticoagulation: Take blood-thinning medication as prescribed to prevent clots.",
+        "Physical Therapy: Daily exercises are mandatory to regain leg strength.",
+        "Home Safety: Use high-seated chairs and a raised toilet seat.",
+        "Complications: Watch for calf pain, shortness of breath, or surgical site redness."
+      ],
+      "estimated_recovery": "6-12 months"
+    }
+  },
+  "leg": {
+    "fractured": {
+      "title": "Leg (Tibia/Fibula) Recovery",
+      "steps": [
+        "Non-Weight Bearing: Strictly no pressure on the leg; use crutches or a walker.",
+        "Elevation: Keep the leg propped on pillows above heart level while resting.",
+        "Thrombo-care: Perform ankle pumps (if allowed) to maintain lower leg circulation.",
+        "Skin Care: Monitor for pressure sores under the cast or brace edges.",
+        "Nutrition: Ensure adequate intake of protein, calcium, and Vitamin D.",
+        "Alert: Seek help for severe swelling, calf heat, or chest pain."
+      ],
+      "estimated_recovery": "4-6 months"
+    }
+  },
+  "knee": {
+    "fractured": {
+      "title": "Knee (Patella) Recovery",
+      "steps": [
+        "Bracing: Keep the knee brace locked in extension if that was prescribed.",
+        "Straight Leg Raises: Perform isometric quad sets to prevent muscle wasting.",
+        "Icing: Apply ice to the knee for 20 mins every 4 hours for the first week.",
+        "Weight Status: Strictly adhere to the weight-bearing limits (often Toe-Touch).",
+        "Stairs: Use the 'Up with the Good, Down with the Bad' technique for stairs.",
+        "Urgency: Report any locking, clicking, or sudden inability to move the ankle."
+      ],
+      "estimated_recovery": "3-6 months"
+    }
+  },
+  "tibia": {
+    "fractured": {
+      "title": "Tibia (Shin Bone) Protocol",
+      "steps": [
+        "Casting: Maintain the long-leg or short-leg cast; keep it dry at all times.",
+        "Elevation: Crucial in the first 2 weeks to prevent throbbing pain and swelling.",
+        "Weight Transition: Move to partial weight-bearing only when callus is seen on X-ray.",
+        "Toes: Wiggle toes constantly to check for nerve function and blood flow.",
+        "Safety: Remove area rugs and obstacles from walking paths in your home.",
+        "Complication: Report 'Compartment Syndrome' signs: intense pain even with meds."
+      ],
+      "estimated_recovery": "4-6 months"
+    }
+  },
+  "ankle": {
+    "fractured": {
+      "title": "Ankle Fracture Recovery",
+      "steps": [
+        "RICE: Rest, Ice, Compression, and Elevation are vital for the first 14 days.",
+        "Weight Bearing: Do not attempt to walk on the ankle until cleared by a doctor.",
+        "Orthopedic Boot: If provided a boot, wear it consistently for all movements.",
+        "Gentle Mobilization: Start ankle circles only after the fracture has stabilized.",
+        "PT Focus: Work on balance and proprioception to prevent future sprains.",
+        "Nerve Watch: Watch for numbness on the top or bottom of the foot."
+      ],
+      "estimated_recovery": "6-10 weeks"
+    }
+  },
+  "foot": {
+    "fractured": {
+      "title": "Foot Fracture Recovery Guide",
+      "steps": [
+        "Protective Footwear: Use a stiff-soled shoe or walking boot as directed.",
+        "Elevation: Keeping the foot raised is the best way to manage foot pain.",
+        "Non-Weight Bearing: Use a knee scooter or crutches if total rest is required.",
+        "Swelling Monitor: Foot swelling can last for months; continue elevation as needed.",
+        "Arch Support: Transition to supportive sneakers once the boot is removed.",
+        "Alert: Report any skin changes, ulcers, or severe burning pain."
+      ],
+      "estimated_recovery": "6-10 weeks"
+    }
+  },
+  "toe": {
+    "fractured": {
+      "title": "Toe Fracture Care Plan",
+      "steps": [
+        "Buddy Taping: Secure the injured toe to the healthy one next to it with padding.",
+        "Stiff Shoes: Wear shoes with a hard sole that prevents the toe from bending.",
+        "Ice: Apply small ice packs for 10-15 mins several times daily.",
+        "Rest: Minimize walking and avoid sports for at least 3-4 weeks.",
+        "Elevation: Propping your foot up while sitting will reduce throbbing.",
+        "Signs: See a doctor if the toe is severely crooked or if there is an open wound."
+      ],
+      "estimated_recovery": "4-6 weeks"
+    }
+  },
+  "spine": {
+    "fractured": {
+      "title": "Spine (Vertebral) Recovery",
+      "steps": [
+        "Bracing: Wear your back brace (TLSO/LSO) exactly as instructed, especially when up.",
+        "BLT Rules: No Bending, No Lifting (over 5 lbs), and No Twisting the spine.",
+        "Log Rolling: Use the log-rolling technique to get in and out of bed.",
+        "Walking: Short, frequent walks on flat surfaces are the best early exercise.",
+        "Pain Control: Management may include nerve blocks or specific medications.",
+        "Urgent: Seek ER care for bowel/bladder changes or sudden leg weakness."
+      ],
+      "estimated_recovery": "3-6 months"
+    }
+  }
+}
