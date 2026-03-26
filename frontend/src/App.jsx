@@ -32,7 +32,7 @@ function App() {
       setTimeout(() => {
         setResults(data);
         setIsLoading(false);
-      }, 800);
+      }, 7000);
     } catch (err) {
       console.error(err);
       setError(err.message || 'An error occurred during prediction.');
