@@ -56,6 +56,3 @@ An advanced machine learning web application for analyzing X-ray images. It clas
 1. Open your browser and go to `http://localhost:5173`.
 2. Upload an X-ray image (JPG, PNG).
 3. View the analysis results.
-
-## License
-MIT
