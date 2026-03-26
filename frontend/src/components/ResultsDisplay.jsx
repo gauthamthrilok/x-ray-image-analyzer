@@ -26,14 +26,14 @@ const ResultCard = ({ title, value, confidence, colorClass }) => (
 export default function ResultsDisplay({ results, isLoading }) {
   if (isLoading) {
     return (
-      <div className="w-full max-w-2xl mx-auto mt-10 p-12 rounded-[40px] bg-white border border-slate-100 flex flex-col items-center justify-center min-h-[300px] shadow-sm">
+      <div className="w-full max-w-2xl mx-auto mt-10 p-12 rounded-[40px] bg-white border border-slate-100 flex flex-col items-center justify-center min-h-75 shadow-sm">
         <div className="relative z-10 flex flex-col items-center gap-8">
           <div className="relative w-20 h-20">
             <div className="absolute inset-0 border-4 border-slate-50 rounded-full"></div>
             <div className="absolute inset-0 border-4 border-brand-main rounded-full border-t-transparent animate-spin"></div>
           </div>
           <div className="text-center">
-            <h3 className="text-xl font-bold text-slate-800 mb-2">Analyzing Diagnostics</h3>
+            <h3 className="text-xl font-bold text-slate-800 mb-2">Analysing Diagnostics</h3>
             <p className="text-sm text-slate-500 font-medium">Our system is reviewing your medical image...</p>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function ResultsDisplay({ results, isLoading }) {
           <div className="space-y-4 mb-8">
             {results.recovery_plan.steps.map((step, idx) => (
               <div key={idx} className="flex gap-4 text-[15px] text-slate-600 leading-relaxed">
-                <span className="text-brand-dark font-black flex-shrink-0">{idx + 1}</span>
+                <span className="text-brand-dark font-black shrink-0">{idx + 1}</span>
                 <p className="font-medium">{step}</p>
               </div>
             ))}

@@ -55,7 +55,7 @@ function App() {
             X-ray Analysis <span className="text-brand-dark">Portal</span>
           </h1>
           <p className="text-slate-500 max-w-xl mx-auto text-sm md:text-base font-medium leading-relaxed">
-            Professional diagnostic tool for rapid orthopedic imaging. Providing clear, accurate analysis using medical-grade deep learning models.
+            Professional diagnostic tool for rapid orthopedic imaging. Providing clear, accurate analysis using medical-grade deep learning model.
           </p>
         </header>
 
