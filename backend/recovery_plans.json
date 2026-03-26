@@ -99,7 +99,7 @@
   },
   "hip": {
     "fractured": {
-      "title": "Hip Fracture Recovery (Post-Op)",
+      "title": "Hip Fracture Recovery",
       "steps": [
         "Early Mobilization: Stand and walk with assistance within 24 hours of surgery.",
         "Hip Precautions: Avoid bending the hip past 90 degrees and do not cross legs.",
@@ -113,7 +113,7 @@
   },
   "leg": {
     "fractured": {
-      "title": "Leg (Tibia/Fibula) Recovery",
+      "title": "Leg (Femur) Recovery",
       "steps": [
         "Non-Weight Bearing: Strictly no pressure on the leg; use crutches or a walker.",
         "Elevation: Keep the leg propped on pillows above heart level while resting.",
