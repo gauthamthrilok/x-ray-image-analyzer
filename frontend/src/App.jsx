@@ -18,7 +18,7 @@ function App() {
     formData.append('file', selectedFile);
 
     try {
-      const response = await fetch('x-ray-image-analyzer-production.up.railway.app/predict', {
+      const response = await fetch('https://x-ray-image-analyzer-production.up.railway.app/predict', {
         method: 'POST',
         body: formData,
       });
