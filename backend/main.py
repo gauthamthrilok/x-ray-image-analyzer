@@ -21,9 +21,15 @@ except ImportError:
 app = FastAPI(title="ML Model Inference API")
 
 # Setup CORS
+origins = [
+    "https://x-ray-image-analyzer.vercel.app",
+    "http://localhost:5173",  # For local development (Vite default)
+    "http://localhost:3000",  # Common alternative for local dev
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjust in production
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
